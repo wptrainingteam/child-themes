@@ -1,5 +1,7 @@
 ## Description
 
+This is just a test.
+
 In this lesson you will learn what a Child Theme is and when should you use one? This step-by-step walkthrough will give you an understanding of what a Child Theme is and how to create your own Child Theme.
 
 ## Objectives
