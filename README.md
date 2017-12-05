@@ -352,13 +352,13 @@ When you update the Parent Theme with a new version, none of these Child Theme f
 
 **What items do you have to include in the style.css file of your Child Theme in order for it to work properly?**
 
-1.  `Theme Name: [Name] and Template: [parentfolder]`
-2.  `Theme Name: [Name] and Version: [#]`
-3.  `Description: [Theme description] and wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );`
-4.  `Template: [parentfolder] and wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );`
-5.  `Theme Name: [Name] and wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );`
+1.  Theme Name: [Name] and Template: [parentfolder]
+2.  Theme Name: [Name] and Version: [#] 
+3.  Description: [Theme description] and wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+4.  Template: [parentfolder] and wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+5.  Theme Name: [Name] and wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 
-**Answer:** 4\. `Template: [parentfolder] and wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );`
+**Answer:** 4\. Template: [parentfolder] and wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 
 * * *
 
