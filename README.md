@@ -102,7 +102,8 @@ Create a folder for your Child Theme. The folder name should be all lowercase wi
 
 At a minimum, your Child Theme needs a `style.css` file. The `style.css` file tells WordPress to load the Parent Theme's files after the Child. Place this file inside the Child Theme's folder. Make sure it is in the root level of the Child Theme folder and not inside a subfolder. The `style.css` file needs the following code at the top:
 
-<pre> /*
+```css
+/*
  Theme Name: [Your Theme Name]
  Description: The custom theme [Your Theme Name] using the parent theme Twenty Seventeen.
  Author: [You]
@@ -110,7 +111,7 @@ At a minimum, your Child Theme needs a `style.css` file. The `style.css` file te
  Template: <span style="color: #000000">twentyseventeen</span>
  Version: 1
  */
-</pre>
+```
 
 There are other variables you can include, but these are the most important ones you should include to identify your Child Theme. Here is an explanation of the different variables in `style.css`:
 
@@ -127,16 +128,19 @@ All of these variables are optional, with the exception of `**Template:**`. If t
 
 Your Child Theme needs to call the `style.css` files using a method called "enqueueing scripts." To add the calls for the parent and child theme stylesheets to your child theme, first you need to create a `functions.php` file. Place this file inside the Child Theme's folder. Make sure it is in the root level of the Child Theme folder and not inside a subfolder. [tip]Note that `functions.php` in the child theme does not replace `functions.php` in the parent theme. This is where you can put hooks, actions, and filters that modify or add functionality to the parent theme, rather than replacing it.[/tip] The first line of your child theme's `functions.php` will be an opening PHP tag (`<?php`), after which you can enqueue your parent and child theme stylesheets. The correct method of enqueuing the parent theme stylesheet is to add a `wp_enqueue_scripts` action and use `wp_enqueue_style()` in your child theme's `functions.php`. The following example function will only work if your Parent Theme uses only one main `style.css` to hold all of the css. If your theme has more than one .css file (eg. `ie.css`, `style.css`, `main.css`) then you will have to make sure to maintain all of the Parent Theme dependencies.
 
-<pre><?php
+```php
+<?php
 function mychildtheme_enqueue_styles() {
    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'mychildtheme_enqueue_styles' ); 
-?></pre>
+?>
+```
 
 This line needs to point to the Parent Theme’s `style.css` file. Your Child Theme's `style.css` file can be empty. But if it contains CSS code, as it usually will, you will need to enqueue it as well. Setting 'parent-style' as a dependency will ensure that the child theme stylesheet loads after it.
 
-<pre>function mychildtheme_enqueue_styles() {
+```php
+function mychildtheme_enqueue_styles() {
     $parent_style = 'parent-style';
 
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
@@ -146,7 +150,7 @@ This line needs to point to the Parent Theme’s `style.css` file. Your Child Th
     );
 }
 add_action( 'wp_enqueue_scripts', 'mychildtheme_enqueue_styles' );
-</pre>
+```
 
 This is the recommended way to enque the styles for your Child Theme. [warning]The old way of enqueuing scripts and styles was to use `@import url("../parentfolder/style.css");`, and you'll still see old articles online that show that technique. But this is very inefficient, so a better way is to use the `wp_enqueue_style()` method covered here.[/warning]
 
@@ -190,11 +194,12 @@ The Child Theme's `style.css` file will override any styles in the Parent Theme'
 
 In the Child Theme's `style.css` file, add the selector and the font-size you want to change the Site Title to:
 
-<pre>.site-title {
+```css
+.site-title {
     font-size: 4.75rem;
     line-height: 1.25;
 }
-</pre>
+```
 
 Now the Site Title is 4.75rem instead of 1.75rem. 
 
@@ -214,16 +219,19 @@ Let's say you want to replace the text "Proudly powered by WordPress" in the foo
 
 Open `footer.php` in the `twentyseventeen` folder. You can see the following line of code that needs to be edited. This statement pulls in a template with the "Proudly powered by WordPress" message. You'll no longer need to use that template file, so this is the statement you'll replace.
 
-<pre> get_template_part( 'template-parts/footer/site', 'info' );
- ?></pre>
+```php 
+get_template_part( 'template-parts/footer/site', 'info' );
+ ?>
+```
 
 Save a copy of `footer.php` into the Child Theme folder. You can safely edit this Child Theme file, leaving the original copy of `footer.php` in `wp-content/themes/twentyseventeen` intact. Just like your other Child Theme files, `wp-content/themes/mychildtheme/footer.php` will override the Parent copy. To display a Copyright line, replace the content above in `footer.php` in `wp-content/themes/mychildtheme` with the following code:
 
-<pre> ?>
+```php 
+?>
  <div class="site-info">
     Copyright &copy; <?php echo date('Y'); ?>
  </div><!-- .site-info -->
-</pre>
+```
 
 The result on the front-end of the site: 
 
@@ -235,7 +243,8 @@ The result on the front-end of the site:
 
 In addition to being able to override existing templates with a Child Theme, you can also create new templates. Let's say you want to add a new Template without a sidebar. Make a copy of `index.php` in your Child Theme and rename it `index-nosidebar.php`. Edit the existing code at the top:
 
-<pre><?php
+```php
+<?php
 /**
 * The main template file
 *
@@ -253,28 +262,28 @@ In addition to being able to override existing templates with a Child Theme, you
 */
 
 get_header(); ?>
-</pre>
+```
 
 to the following:
 
-<pre> <?php
+```php 
+<?php
  /*
  Template Name: Page with no sidebar
  */
 
  get_header(); ?>
-
-</pre>
+```
 
 The name of the template goes after the variable `Template Name:`. Finally, find and remove the line of code near the end of the file which loads the sidebar. This is called `get_sidebar();`:
 
-<pre>        
+```php
 </main><!-- #main --> 
     </div><!-- #primary --> 
     <?php get_sidebar(); ?>  // DELETE this line!
 </div><!-- .wrap -->
 <?php get_footer();  // leave this line in!
-</pre>
+```
 
 The new template will now appear under **Page Attributes** on the Edit Page screen: 
 
