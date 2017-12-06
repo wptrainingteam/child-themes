@@ -33,7 +33,7 @@ You will be better equipped to work through this lesson if you have experience i
 
 ## Teacher Notes
 
-*   **Time Estimate: **45 minutes
+*   **Time Estimate:** 45 minutes
 *   Performing a live demo while teaching the steps to make a child theme is crucial to having the material "click" for students.
 *   It is easiest for students to work on a locally installed copy of WordPress. Set some time aside before class to assist students with installing WordPress locally if they need it. For more information on how to install WordPress locally, please visit our [Teacher Resources page](http://make.wordpress.org/training/teacher-resources/).
 *   The preferred answers to the screening questions is "yes." Participants who reply "no" to all 4 questions may not be ready for this lesson.
@@ -57,15 +57,15 @@ The #1 Rule of WordPress development is to **never directly modify WordPress fil
 
 *Exception: starter themes that have been intentionally created by theme builders for you to modify. **Why?**
 
-*   *   **Updates wipe out customization changes**
+*   **Updates wipe out customization changes**
 
 If you update a modified theme, the update will overwrite all customizations. Similarly, when you update a plugin, the update will overwrite any edits you've made. Same for WordPress core files.
 
-*   *   **Themes can get broken**
+*   **Themes can get broken**
 
 If you edit theme files directly and make a mistake that cannot be undone, you are stuck with a broken theme.
 
-*   *   **WordPress and WordPress Plugins may not work with theme hacks**
+*   **WordPress and WordPress Plugins may not work with theme hacks**
 
 You may inadvertently remove elements that WordPress and WordPress plugins look for in a theme, so they no longer work. **So how do you safely customize a WordPress theme?** Create a **Child Theme** that is a "**child**" of another theme (the Parent Theme).
 
