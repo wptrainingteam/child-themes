@@ -78,7 +78,7 @@ You may inadvertently remove elements that WordPress and WordPress plugins look 
 
 A Child Theme loads first, before the Parent, and only contains overrides and additions to the Parent Theme.
 
-![](child-themes/images/file-flow-diagram-1.png)
+![](/images/file-flow-diagram-1.png)
 
 All of your CSS, templates, images, and other files are kept in the Child Theme's folder while the original Parent Theme's files are left intact. If something breaks, you can simply delete or fix the offending file in the Child Theme folder.
 
@@ -92,11 +92,11 @@ You are going to create a Child Theme of the default WordPress theme [Twenty Sev
 
 Every theme for WordPress needs its own folder. Take a look at the folder structure of WordPress. You can see each installed theme's folder in `/wp-content/themes` 
 
-![](child-themes/images/folders-one-new.png)
+![](/images/folders-one-new.png)
 
 Create a folder for your Child Theme. The folder name should be all lowercase with no spaces. In our example the Child Theme's folder is called "**mychildtheme**." 
 
-![](child-themes/images/childthemes-file-path-new-folder.png)
+![](/images/childthemes-file-path-new-folder.png)
 
 #### Step 2: A style.css file
 
@@ -158,7 +158,7 @@ This is the recommended way to enque the styles for your Child Theme. [warning]T
 
 A theme's screenshot is the thumbnail image that shows up under Appearance > Themes in the WordPress Dashboard. A screenshot image is not required for a Child Theme, but it will look sad without one. 
 
-![](child-themes/images/screenshot-1.png)
+![](/images/screenshot-1.png)
 
 The recommended image size is 880x660. The screenshot will only be shown as 387x290, but the larger image allows for high-resolution viewing on HiDPI displays. Create a 880px by 660px image file, name it "screenshot.png", and place it into the child theme's folder. If you don't have an image editor, download a [sample screenshot.png file](https://make.wordpress.org/training/files/2017/05/screenshot.png).
 
@@ -168,11 +168,11 @@ The recommended image size is 880x660. The screenshot will only be shown as 387x
 
 You now have everything you need to use a Child Theme! Make sure the Child Theme folder containing at least `style.css` is uploaded or pushed to `/wp-content/themes` on the webserver, or your computer if you are working on a local WordPress install. After you add the theme folder to `/wp-content/themes`, go to Appearance > Themes in the Dashboard. You should see your theme listed. 
 
-![](child-themes/images/my-child-theme-activate.png)
+![](/images/my-child-theme-activate.png)
 
 Hover over your theme to reveal the "Activate" button. Click to activate your theme. Once activated, the site will not look any different on the front-end, but the Child Theme will be the theme in charge. You can now see your theme labeled as "active". 
 
-![](child-themes/images/my-child-theme-active.png)
+![](/images/my-child-theme-active.png)
 
 * * *
 
@@ -180,7 +180,7 @@ Hover over your theme to reveal the "Activate" button. Click to activate your th
 
 The files in the example Child Theme illustrate how a Child Theme's files affect the Parent's files: they either override elements and add functionality to its identically named file, or completely replaces it. 
 
-![](child-themes/images/file-flow-diagram-2.png)
+![](/images/file-flow-diagram-2.png)
 
 `style.css` in MyChildTheme overrides elements and adds to `style.css` in Twenty Seventeen, while `screenshot.png` completely replaces the copy of `screenshot.png` in Twenty Seventeen.
 
@@ -190,7 +190,7 @@ The files in the example Child Theme illustrate how a Child Theme's files affect
 
 The Child Theme's `style.css` file will override any styles in the Parent Theme's `style.css` file that have the same selectors. Let's say you wanted to change the size of the Site Title in the header. Inspecting that element reveals the CSS selector `.site-title` shows that the Parent Theme sets the font size at 2.25rem. (This is using the inspector in Google Chrome, but all the major browsers show this information in different formats.) 
 
-![](child-themes/images/Inspect-Site-Title.png)
+![](/images/Inspect-Site-Title.png)
 
 In the Child Theme's `style.css` file, add the selector and the font-size you want to change the Site Title to:
 
@@ -203,7 +203,7 @@ In the Child Theme's `style.css` file, add the selector and the font-size you wa
 
 Now the Site Title is 4.75rem instead of 1.75rem. 
 
-![](child-themes/images/Inspect-Site-Title-Enlarged.png)
+![](/images/Inspect-Site-Title-Enlarged.png)
 
 * * *
 
@@ -211,11 +211,11 @@ Now the Site Title is 4.75rem instead of 1.75rem.
 
 [Templates](http://codex.wordpress.org/Templates) are the files that control how your WordPress site will be displayed on the Web. Inside the `twentyseventeen` folder are all of Twenty Seventeen's template files. You can create your own versions of these files in your Child Theme. 
 
-![](child-themes/images/twenty-seventeen-files.png)
+![](/images/twenty-seventeen-files.png)
 
 Let's say you want to replace the text "Proudly powered by WordPress" in the footer with a copyright. Here's how it looks now: 
 
-![](child-themes/images/twenty-seventeen-default-footer.png)
+![](/images/twenty-seventeen-default-footer.png)
 
 Open `footer.php` in the `twentyseventeen` folder. You can see the following line of code that needs to be edited. This statement pulls in a template with the "Proudly powered by WordPress" message. You'll no longer need to use that template file, so this is the statement you'll replace.
 
@@ -235,7 +235,7 @@ Save a copy of `footer.php` into the Child Theme folder. You can safely edit thi
 
 The result on the front-end of the site: 
 
-![](child-themes/images/mychildtheme-footer.png)
+![](/images/mychildtheme-footer.png)
 
 * * *
 
@@ -287,7 +287,7 @@ The name of the template goes after the variable `Template Name:`. Finally, find
 
 The new template will now appear under **Page Attributes** on the Edit Page screen: 
 
-![](child-themes/images/no-sidebar-template.png)
+![](/images/no-sidebar-template.png)
 
 * * *
 
@@ -295,7 +295,7 @@ The new template will now appear under **Page Attributes** on the Edit Page scre
 
 Your Child Theme now has one file that overrides elements in its Parent Theme's file, two files that replace files in the Parent Theme, and one brand new file that does not exist in the Parent Theme.
 
-![](child-themes/images/file-flow-diagram-3.png)
+![](/images/file-flow-diagram-3.png)
 
 When you update the Parent Theme with a new version, none of these Child Theme files will be modified. Child Themes are a safe and powerful way to override and add elements to an existing theme. Now that you know how to make one, go forth and make some awesome looking sites!
 
