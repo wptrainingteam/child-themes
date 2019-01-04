@@ -21,7 +21,7 @@ You will be better equipped to work through this lesson if you have experience i
 
 ## Assets
 
-*   [Twenty Seventeen theme](https://wordpress.org/themes/twentyseventeen/ "Twenty Sixteen Theme")
+*   [Twenty Seventeen theme](https://wordpress.org/themes/twentyseventeen/ "Twenty Seventeen Theme")
 *   [Sample screenshot png file](https://make.wordpress.org/training/files/2017/05/screenshot.png)
 
 ## Screening Questions
@@ -86,7 +86,7 @@ All of your CSS, templates, images, and other files are kept in the Child Theme'
 
 ### Creating a Child Theme
 
-You are going to create a Child Theme of the default WordPress theme [Twenty Seventeen](https://wordpress.org/themes/twentyseventeen/ "Twenty Sixteen Theme"). We'll name this Child Theme "**MyChildTheme**". A Child Theme only needs a few things to get up and running: a theme folder, a CSS file, and a screenshot file.
+You are going to create a Child Theme of the default WordPress theme [Twenty Seventeen](https://wordpress.org/themes/twentyseventeen/ "Twenty Seventeen"). We'll name this Child Theme "**MyChildTheme**". A Child Theme only needs a few things to get up and running: a theme folder, a CSS file, and a screenshot file.
 
 #### Step 1: A Theme Folder
 
