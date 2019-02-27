@@ -14,8 +14,8 @@ At the end of this lesson, you will be able to:
 
 You will be better equipped to work through this lesson if you have experience in and familiarity with:
 
-*   Basic knowledge of HTML/[CSS](https://make.wordpress.org/training/handbook/theme-school/intro-to-css/)
-*   Basic knowledge of [installing and activating WordPress themes](https://make.wordpress.org/training/handbook/user-lessons/choosing-and-installing-a-theme/)
+*   Basic knowledge of HTML/[CSS](https://make.wordpress.org/training/handbook/lesson-plans/theme-school/intro-to-css/)
+*   Basic knowledge of [installing and activating WordPress themes](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-a-theme/)
 *   Understanding of how folders and files are structured
 *   Ability to edit files with a text editor
 
@@ -35,7 +35,7 @@ You will be better equipped to work through this lesson if you have experience i
 
 *   **Time Estimate:** 45 minutes
 *   Performing a live demo while teaching the steps to make a child theme is crucial to having the material "click" for students.
-*   It is easiest for students to work on a locally installed copy of WordPress. Set some time aside before class to assist students with installing WordPress locally if they need it. For more information on how to install WordPress locally, please visit our [Teacher Resources page](http://make.wordpress.org/training/teacher-resources/).
+*   It is easiest for students to work on a locally installed copy of WordPress. Set some time aside before class to assist students with installing WordPress locally if they need it. For more information on how to install WordPress locally, please visit our [Teacher Resources page](https://make.wordpress.org/training/teacher-resources/).
 *   The preferred answers to the screening questions is "yes." Participants who reply "no" to all 4 questions may not be ready for this lesson.
 *   Built using WordPress 4.7.4.
 
