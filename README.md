@@ -14,8 +14,8 @@ At the end of this lesson, you will be able to:
 
 You will be better equipped to work through this lesson if you have experience in and familiarity with:
 
-*   Basic knowledge of HTML/[CSS](https://make.wordpress.org/training/handbook/lesson-plans/theme-school/intro-to-css/)
-*   Basic knowledge of [installing and activating WordPress themes](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-a-theme/)
+*   Basic knowledge of HTML/[CSS](https://github.com/wptrainingteam/introduction-to-css)
+*   Basic knowledge of [installing and activating WordPress themes](https://github.com/wptrainingteam/choosing-and-installing-themes)
 *   Understanding of how folders and files are structured
 *   Ability to edit files with a text editor
 
