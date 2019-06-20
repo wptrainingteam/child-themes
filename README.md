@@ -65,7 +65,7 @@ You will be better equipped to work through this lesson if you have experience i
 
 ## Slides
 
-*   [Slides](https://wptrainingteam.github.io/lesson-plans/child-themes/slides/) (files included in this repo)
+*   [Slides](https://wptrainingteam.github.io/lesson-plan/child-themes/slides/) (files included in this repo)
 
 ## Materials Needed
 
