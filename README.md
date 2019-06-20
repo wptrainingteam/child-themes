@@ -6,28 +6,28 @@ In this lesson you will learn what a Child Theme is and when should you use one.
 
 At the end of this lesson, you will be able to:
 
-*   Explain what a Child Theme is.
-*   Summarize why you should use a Child Themes.
-*   Create a Child Theme.
+* Explain what a Child Theme is.
+* Summarize why you should use a Child Themes.
+* Create a Child Theme.
 
 ## Target Audience
 
-Who is this lesson intended for? What interests/skills would they bring? Choose all that apply.
+Who is this lesson intended for? What interests/skills would they bring? Put an "x" in the brackets for all that apply.
 
-* [ ] Users
+* [ ] Users / Content Writers
 * [ ] Designers
-* [ ] Developers
+* [x] Developers
 * [ ] Speakers
-* [ ] All
+* [ ] Organizers
+* [ ] Kids
 
 ## Experience Level
 
 How much experience would a participant need to get the most from this lesson?
 
 * [ ] Beginner
-* [ ] Intermediate
+* [x] Intermediate
 * [ ] Advanced
-* [ ] Any
 
 ## Type of Instruction
 
@@ -38,6 +38,7 @@ Which strategies will be used for this lesson plan? Choose all that apply.
 * [ ] Exercises
 * [ ] Feedback
 * [ ] Lecture (Presentation)
+* [ ] Slides
 * [ ] Show & Tell
 * [ ] Tutorial
 
@@ -45,7 +46,11 @@ Which strategies will be used for this lesson plan? Choose all that apply.
 
 How long will it take to teach this lesson (in minutes)?
 
-45 minutes
+* [✕] 1 hour or less
+* [ ] 2-4 hours (half-day)
+* [ ] 5-8 hours (full-day)
+* [ ] 2 days
+* [ ] 3 days or more
 
 ## Prerequisite Skills
 
@@ -58,10 +63,10 @@ You will be better equipped to work through this lesson if you have experience i
 
 ## Readiness Questions
 
-*   Are you familiar with installing and activating themes via the WordPress Dashboard?
-*   Do you have at least a basic knowledge of HTML/CSS?
-*   Do you feel comfortable using a text editor to edit code?
-*   Will you have a locally or remotely hosted sandbox WordPress site to use during class?
+* Are you familiar with installing and activating themes via the WordPress Dashboard?
+* Do you have at least a basic knowledge of HTML/CSS?
+* Do you feel comfortable using a text editor to edit code?
+* Will you have a locally or remotely hosted sandbox WordPress site to use during class?
 
 ## Slides
 
@@ -69,15 +74,15 @@ You will be better equipped to work through this lesson if you have experience i
 
 ## Materials Needed
 
-*   [Twenty Seventeen theme](https://wordpress.org/themes/twentyseventeen/ "Twenty Seventeen Theme")
-*   [Sample screenshot png file](https://make.wordpress.org/training/files/2017/05/screenshot.png)
+* [Twenty Seventeen theme](https://wordpress.org/themes/twentyseventeen/ "Twenty Seventeen Theme")
+* [Sample screenshot png file](https://make.wordpress.org/training/files/2017/05/screenshot.png)
 
 ## Notes for the Presenter
 
-*   Performing a live demo while teaching the steps to make a child theme is crucial to having the material "click" for students.
-*   It is easiest for students to work on a locally installed copy of WordPress. Set some time aside before class to assist students with installing WordPress locally if they need it. For more information on how to install WordPress locally, please visit our [Teacher Resources page](https://make.wordpress.org/training/teacher-resources/).
-*   The preferred answers to the screening questions is "yes." Participants who reply "no" to all 4 questions may not be ready for this lesson.
-*   Built using WordPress 4.7.4.
+* Performing a live demo while teaching the steps to make a child theme is crucial to having the material "click" for students.
+* It is easiest for students to work on a locally installed copy of WordPress. Set some time aside before class to assist students with installing WordPress locally if they need it. For more information on how to install WordPress locally, please visit our [Teacher Resources page](https://make.wordpress.org/training/teacher-resources/).
+* The preferred answers to the screening questions is "yes." Participants who reply "no" to all 4 questions may not be ready for this lesson.
+* Built using WordPress 4.7.4.
 
 ## Lesson Outline
 
