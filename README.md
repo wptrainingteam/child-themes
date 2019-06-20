@@ -72,7 +72,7 @@ You will be better equipped to work through this lesson if you have experience i
 *   [Twenty Seventeen theme](https://wordpress.org/themes/twentyseventeen/ "Twenty Seventeen Theme")
 *   [Sample screenshot png file](https://make.wordpress.org/training/files/2017/05/screenshot.png)
 
-## Notes for the Instructor
+## Notes for the Presenter
 
 *   Performing a live demo while teaching the steps to make a child theme is crucial to having the material "click" for students.
 *   It is easiest for students to work on a locally installed copy of WordPress. Set some time aside before class to assist students with installing WordPress locally if they need it. For more information on how to install WordPress locally, please visit our [Teacher Resources page](https://make.wordpress.org/training/teacher-resources/).
