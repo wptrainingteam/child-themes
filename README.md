@@ -46,7 +46,7 @@ Which strategies will be used for this lesson plan? Choose all that apply.
 
 How long will it take to teach this lesson (in minutes)?
 
-* [✕] 1 hour or less
+* [x] 1 hour or less
 * [ ] 2-4 hours (half-day)
 * [ ] 5-8 hours (full-day)
 * [ ] 2 days
