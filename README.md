@@ -166,7 +166,7 @@ You will be better equipped to work through this lesson if you have experience i
 
 ## Additional Resources
 
-* [Child Themes](https://codex.wordpress.org/Child_Themes) in the WordPress Codex
+* [Child Themes](https://developer.wordpress.org/themes/advanced-topics/child-themes/) in the WordPress Theme Handbook
 
 ## Example Lesson
 
